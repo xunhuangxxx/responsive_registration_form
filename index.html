@@ -20,10 +20,10 @@
         <fieldset>
           <legend>Contact Information</legend>
           <label for="name">Full Name</label>
-          <input type="text" id="name" name="user-name"/>
+          <input type="text" id="name" name="user-name" placeholder="Required"/>
 
           <label for="email">Email Address</label>
-          <input type="email" id="email" name="user-email"/>
+          <input type="email" id="email" name="user-email" placeholder="Required"/>
 
           <label for="phone">Phone Number</label>
           <input type="tel" id="phone" name="user-phone"/>
@@ -35,7 +35,20 @@
           <input type="text" id="city" name="user-city"/>
 
           <label for="state">State</label>
-          <input type="text" id="state" name="user-state"/>
+          <select id="state" name="user-state">
+            <option value="Alabama">Alabama</option>
+            <option value="Arizona">Arizona</option>
+            <option value="California">California</option>
+            <option value="Florida">Florida</option>
+            <option value="Georgia">Georgiaa</option>
+            <option value="Maryland">Maryland</option>
+            <option value="Massachusetts">Massachusetts</option>
+            <option value="New York">New York</option>
+            <option value="Ohio">Ohio</option>
+            <option value="Texas">Texas</option>
+            <option value="Washington">Washington</option>
+
+          </select>
 
           <label for="zip">Zip Code</label>
           <input type="number" id="zip" name="user-zip-code"/>
