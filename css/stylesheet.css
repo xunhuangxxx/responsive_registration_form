@@ -88,6 +88,7 @@ main{
 #fieldset2 input{
   margin:8px;
 }
+
 #other {
   margin:20px auto;
 }
@@ -95,6 +96,7 @@ main{
 input::placeholder{
   text-align: right;
 }
+
 
 select {
   color:#696969;
@@ -105,6 +107,10 @@ select {
   margin-bottom: 8px;
 }
 
+#fieldset1 input:focus, textarea:focus {
+  color: #483D8B;
+  background: beige;
+}
 button {
   width:100%;
   padding:15px;
@@ -115,4 +121,41 @@ button {
 footer {
   text-align: center;
   margin-bottom: 150px;
+}
+
+/* -------------media queries----------------------------------- */
+
+@media (min-width: 768px) {
+  #intro, footer {
+   margin: 5px 136px 1px;
+   padding-bottom: 30px;
+  }
+   .form {
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+
+  .contact {
+    display: flex;
+    margin:15px 0;
+
+    justify-content: space-between;
+  }
+  #fieldset1 label {
+    margin:3px;
+    align-self: center;
+
+  }
+  #fieldset1 input:not(#zip), select {
+    width:250px;
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+  #fieldset1 input:last-child {
+    width:120px;
+    margin-left: 1px;
+    margin-right: 130px;
+  }
+
+
 }
