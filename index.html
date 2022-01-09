@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
+    <title>The Code Review</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,30 +23,30 @@
         <div class="form">
           <fieldset id="fieldset1">
             <legend>Contact Information</legend>
-            
+
             <div class="contact">
               <label for="name">Full Name</label>
-              <input type="text" id="name" name="user-name" placeholder="Required"/>
+              <input required type="text" id="name" name="user-name" placeholder="Required"/>
             </div>
 
             <div class="contact">
               <label for="email">Email Address</label>
-              <input type="email" id="email" name="user-email" placeholder="Required"/>
+              <input required type="email" id="email" name="user-email" placeholder="Required"/>
             </div>
 
             <div class="contact">
               <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="user-phone"/>
+              <input type="tel" id="phone" name="user-phone" placeholder="Optional"/>
             </div>
 
             <div class="contact">
               <label for="address">Street Address</label>
-              <input type="text" id="address" name="user-address"/>
+              <input type="text" id="address" name="user-address" placeholder="Optional"/>
             </div>
 
             <div class="contact">
               <label for="city">City</label>
-              <input type="text" id="city" name="user-city"/>
+              <input type="text" id="city" name="user-city" placeholder="Optional"/>
             </div>
 
             <div class="contact">
@@ -69,7 +69,7 @@
 
             <div class="contact">
               <label for="zip">Zip Code</label>
-              <input type="number" id="zip" name="user-zip-code"/>
+              <input type="number" id="zip" name="user-zip-code" placeholder="Optional"/>
             </div>
          </fieldset>
        </div>
@@ -78,26 +78,26 @@
        <div class="form">
          <fieldset id="fieldset2">
            <legend>Newsletter</legend>
-           <p class="p1">Select the newsletter yo would like to receive</p>
+           <p class="p1">Select the newsletter you would like to receive</p>
 
-           <input type="checkbox" id="html" name="html-news"/>
+           <input type="checkbox" id="html" name="newsletter"/>
            <label for="html">HTML News</label><br />
 
-           <input type="checkbox" id="css" name="css-news"/>
+           <input type="checkbox" id="css" name="newsletter"/>
            <label for="css">CSS News</label><br />
 
-           <input type="checkbox" id="javescript" name="javescript-news"/>
+           <input type="checkbox" id="javescript" name="newsletter"/>
            <label for="javescript">Javescript News</label><br />
 
            <p class="p1">Newletter format</p>
            <input type="radio" id="html-format" name="format"/>
            <label for="html-format">HTML</label><br />
-           <input type="radio" id="html-text" name="format"/>
+           <input type="radio" id="text-format" name="format"/>
            <label for="text-format">Plain text</label><br />
 
          <div id="other">
            <label for="other-topics">Other topics you'd like to hear about</label>
-           <textarea name="other-topics" rows="5" cols="20"></textarea>
+           <textarea name="other-topics" id="other-topics" rows="5" cols="20" placeholder="Hi there! I'm also interested in..."></textarea>
          </div>
 
          <button type="submit">Sign Up</button>

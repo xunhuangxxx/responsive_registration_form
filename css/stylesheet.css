@@ -79,6 +79,7 @@ main{
   border-style: none;
   background-color: #d3d3d3;
   border-radius: 5px;
+  transition: background 2s;
 }
 
 
@@ -109,8 +110,10 @@ select {
 
 #fieldset1 input:focus, textarea:focus {
   color: #483D8B;
-  background: beige;
+  background: #D8BFD8;
+  transition: background 2s;
 }
+
 button {
   width:100%;
   padding:15px;
