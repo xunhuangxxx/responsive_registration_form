@@ -1,2 +1,2 @@
-# responsive_registration_form
+# registration_form
  responsive_registration_form
